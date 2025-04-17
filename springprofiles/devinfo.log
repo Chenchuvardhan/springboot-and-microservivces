@@ -1,0 +1,77 @@
+2024-12-03T16:25:51.757+05:30  INFO 3040 --- [springprofiles] [main] i.s.SpringprofilesApplication            : Starting SpringprofilesApplication using Java 17.0.11 with PID 3040 (C:\sbms\sbms again\springprofiles\target\classes started by DELL in C:\sbms\sbms again\springprofiles)
+2024-12-03T16:25:51.759+05:30  INFO 3040 --- [springprofiles] [main] i.s.SpringprofilesApplication            : The following 1 profile is active: "dev"
+2024-12-03T16:25:52.321+05:30  INFO 3040 --- [springprofiles] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-03T16:25:52.373+05:30  INFO 3040 --- [springprofiles] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interface.
+2024-12-03T16:25:52.842+05:30  INFO 3040 --- [springprofiles] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 2000 (http)
+2024-12-03T16:25:52.854+05:30  INFO 3040 --- [springprofiles] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-03T16:25:52.855+05:30  INFO 3040 --- [springprofiles] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-03T16:25:52.906+05:30  INFO 3040 --- [springprofiles] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-03T16:25:52.906+05:30  INFO 3040 --- [springprofiles] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1109 ms
+2024-12-03T16:25:52.936+05:30  INFO 3040 --- [springprofiles] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-03T16:25:53.106+05:30  INFO 3040 --- [springprofiles] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:chenchu user=CHENCHU
+2024-12-03T16:25:53.108+05:30  INFO 3040 --- [springprofiles] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-03T16:25:53.118+05:30  INFO 3040 --- [springprofiles] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:chenchu'
+2024-12-03T16:25:53.236+05:30  INFO 3040 --- [springprofiles] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-03T16:25:53.289+05:30  INFO 3040 --- [springprofiles] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-03T16:25:53.321+05:30  INFO 3040 --- [springprofiles] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-03T16:25:53.593+05:30  INFO 3040 --- [springprofiles] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-03T16:25:53.667+05:30  INFO 3040 --- [springprofiles] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-03T16:25:54.509+05:30  INFO 3040 --- [springprofiles] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-03T16:25:54.535+05:30  INFO 3040 --- [springprofiles] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-03T16:25:54.801+05:30  WARN 3040 --- [springprofiles] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-03T16:25:55.113+05:30  INFO 3040 --- [springprofiles] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 2000 (http) with context path '/'
+2024-12-03T16:25:55.122+05:30  INFO 3040 --- [springprofiles] [main] i.s.SpringprofilesApplication            : Started SpringprofilesApplication in 3.773 seconds (process running for 4.268)
+2024-12-03T16:26:29.673+05:30  INFO 3040 --- [springprofiles] [http-nio-2000-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-03T16:26:29.674+05:30  INFO 3040 --- [springprofiles] [http-nio-2000-exec-6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-03T16:26:29.677+05:30  INFO 3040 --- [springprofiles] [http-nio-2000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-12-03T16:32:17.062+05:30  INFO 3040 --- [springprofiles] [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-12-03T16:32:17.068+05:30  INFO 3040 --- [springprofiles] [RMI TCP Connection(8)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-03T16:32:17.268+05:30  INFO 3040 --- [springprofiles] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-03T16:32:17.271+05:30  INFO 3040 --- [springprofiles] [RMI TCP Connection(8)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-03T16:32:17.276+05:30  INFO 3040 --- [springprofiles] [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-03T16:32:17.277+05:30  INFO 3040 --- [springprofiles] [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-03T16:32:53.039+05:30  INFO 12008 --- [springprofiles] [main] i.s.SpringprofilesApplication            : Starting SpringprofilesApplication using Java 17.0.11 with PID 12008 (C:\sbms\sbms again\springprofiles\target\classes started by DELL in C:\sbms\sbms again\springprofiles)
+2024-12-03T16:32:53.042+05:30  INFO 12008 --- [springprofiles] [main] i.s.SpringprofilesApplication            : The following 1 profile is active: "dev"
+2024-12-03T16:32:53.588+05:30  INFO 12008 --- [springprofiles] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-03T16:32:53.640+05:30  INFO 12008 --- [springprofiles] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interface.
+2024-12-03T16:32:54.084+05:30  INFO 12008 --- [springprofiles] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 2000 (http)
+2024-12-03T16:32:54.097+05:30  INFO 12008 --- [springprofiles] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-03T16:32:54.098+05:30  INFO 12008 --- [springprofiles] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-03T16:32:54.146+05:30  INFO 12008 --- [springprofiles] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-03T16:32:54.146+05:30  INFO 12008 --- [springprofiles] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1068 ms
+2024-12-03T16:32:54.176+05:30  INFO 12008 --- [springprofiles] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-03T16:32:54.354+05:30  INFO 12008 --- [springprofiles] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:chenchu user=CHENCHU
+2024-12-03T16:32:54.356+05:30  INFO 12008 --- [springprofiles] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-03T16:32:54.366+05:30  INFO 12008 --- [springprofiles] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:chenchu'
+2024-12-03T16:32:54.482+05:30  INFO 12008 --- [springprofiles] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-03T16:32:54.535+05:30  INFO 12008 --- [springprofiles] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-03T16:32:54.567+05:30  INFO 12008 --- [springprofiles] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-03T16:32:54.834+05:30  INFO 12008 --- [springprofiles] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-03T16:32:54.909+05:30  INFO 12008 --- [springprofiles] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-03T16:32:55.753+05:30  INFO 12008 --- [springprofiles] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-03T16:32:55.788+05:30  INFO 12008 --- [springprofiles] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-03T16:32:55.998+05:30  WARN 12008 --- [springprofiles] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-03T16:32:56.290+05:30  INFO 12008 --- [springprofiles] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 2000 (http) with context path '/'
+2024-12-03T16:32:56.299+05:30  INFO 12008 --- [springprofiles] [main] i.s.SpringprofilesApplication            : Started SpringprofilesApplication in 3.66 seconds (process running for 4.145)
+2024-12-03T16:32:56.384+05:30  INFO 12008 --- [springprofiles] [main] i.springprofiles.runners.StudentRunner   : retriving students suceessfully
+2024-12-03T16:43:03.926+05:30  WARN 12008 --- [springprofiles] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m39s398ms554µs300ns).
+2024-12-03T16:43:18.471+05:30  INFO 12008 --- [springprofiles] [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-12-03T16:43:18.474+05:30  INFO 12008 --- [springprofiles] [RMI TCP Connection(10)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-03T16:43:18.611+05:30  INFO 12008 --- [springprofiles] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-03T16:43:18.613+05:30  INFO 12008 --- [springprofiles] [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-03T16:43:18.617+05:30  INFO 12008 --- [springprofiles] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-03T16:43:18.619+05:30  INFO 12008 --- [springprofiles] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -1,0 +1,50 @@
+2024-12-28T21:39:17.980+05:30  INFO 21732 --- [datajpausingsorting_paginatio_QuerybyExample] [main] ortingPaginatioQuerybyExampleApplication : Starting DatajpausingsortingPaginatioQuerybyExampleApplication using Java 17.0.11 with PID 21732 (C:\sbms\sbms again\datajpausingsorting_paginatio_QuerybyExample\target\classes started by DELL in C:\sbms\sbms again\datajpausingsorting_paginatio_QuerybyExample)
+2024-12-28T21:39:17.985+05:30  INFO 21732 --- [datajpausingsorting_paginatio_QuerybyExample] [main] ortingPaginatioQuerybyExampleApplication : No active profile set, falling back to 1 default profile: "default"
+2024-12-28T21:39:18.366+05:30  INFO 21732 --- [datajpausingsorting_paginatio_QuerybyExample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-28T21:39:18.428+05:30  INFO 21732 --- [datajpausingsorting_paginatio_QuerybyExample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interface.
+2024-12-28T21:39:18.713+05:30  INFO 21732 --- [datajpausingsorting_paginatio_QuerybyExample] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-28T21:39:18.769+05:30  INFO 21732 --- [datajpausingsorting_paginatio_QuerybyExample] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-28T21:39:18.801+05:30  INFO 21732 --- [datajpausingsorting_paginatio_QuerybyExample] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-28T21:39:19.094+05:30  INFO 21732 --- [datajpausingsorting_paginatio_QuerybyExample] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-28T21:39:19.123+05:30  INFO 21732 --- [datajpausingsorting_paginatio_QuerybyExample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-28T21:39:19.433+05:30  INFO 21732 --- [datajpausingsorting_paginatio_QuerybyExample] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f5dfe69
+2024-12-28T21:39:19.435+05:30  INFO 21732 --- [datajpausingsorting_paginatio_QuerybyExample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-28T21:39:19.523+05:30  INFO 21732 --- [datajpausingsorting_paginatio_QuerybyExample] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-28T21:39:20.397+05:30  INFO 21732 --- [datajpausingsorting_paginatio_QuerybyExample] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-28T21:39:20.465+05:30  INFO 21732 --- [datajpausingsorting_paginatio_QuerybyExample] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-28T21:39:20.793+05:30  INFO 21732 --- [datajpausingsorting_paginatio_QuerybyExample] [main] ortingPaginatioQuerybyExampleApplication : Started DatajpausingsortingPaginatioQuerybyExampleApplication in 3.214 seconds (process running for 3.69)
+2024-12-28T21:39:20.977+05:30  INFO 21732 --- [datajpausingsorting_paginatio_QuerybyExample] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-28T21:39:20.978+05:30  INFO 21732 --- [datajpausingsorting_paginatio_QuerybyExample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-28T21:39:20.987+05:30  INFO 21732 --- [datajpausingsorting_paginatio_QuerybyExample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-28T21:40:37.758+05:30  INFO 12504 --- [datajpausingsorting_paginatio_QuerybyExample] [main] ortingPaginatioQuerybyExampleApplication : Starting DatajpausingsortingPaginatioQuerybyExampleApplication using Java 17.0.11 with PID 12504 (C:\sbms\sbms again\datajpausingsorting_paginatio_QuerybyExample\target\classes started by DELL in C:\sbms\sbms again\datajpausingsorting_paginatio_QuerybyExample)
+2024-12-28T21:40:37.760+05:30  INFO 12504 --- [datajpausingsorting_paginatio_QuerybyExample] [main] ortingPaginatioQuerybyExampleApplication : No active profile set, falling back to 1 default profile: "default"
+2024-12-28T21:40:38.140+05:30  INFO 12504 --- [datajpausingsorting_paginatio_QuerybyExample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-28T21:40:38.193+05:30  INFO 12504 --- [datajpausingsorting_paginatio_QuerybyExample] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interface.
+2024-12-28T21:40:38.506+05:30  INFO 12504 --- [datajpausingsorting_paginatio_QuerybyExample] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-28T21:40:38.560+05:30  INFO 12504 --- [datajpausingsorting_paginatio_QuerybyExample] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-28T21:40:38.593+05:30  INFO 12504 --- [datajpausingsorting_paginatio_QuerybyExample] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-28T21:40:38.922+05:30  INFO 12504 --- [datajpausingsorting_paginatio_QuerybyExample] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-28T21:40:38.951+05:30  INFO 12504 --- [datajpausingsorting_paginatio_QuerybyExample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-28T21:40:39.252+05:30  INFO 12504 --- [datajpausingsorting_paginatio_QuerybyExample] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@238291d4
+2024-12-28T21:40:39.254+05:30  INFO 12504 --- [datajpausingsorting_paginatio_QuerybyExample] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-28T21:40:39.331+05:30  INFO 12504 --- [datajpausingsorting_paginatio_QuerybyExample] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-28T21:40:40.226+05:30  INFO 12504 --- [datajpausingsorting_paginatio_QuerybyExample] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-28T21:40:40.277+05:30  INFO 12504 --- [datajpausingsorting_paginatio_QuerybyExample] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-28T21:40:40.605+05:30  INFO 12504 --- [datajpausingsorting_paginatio_QuerybyExample] [main] ortingPaginatioQuerybyExampleApplication : Started DatajpausingsortingPaginatioQuerybyExampleApplication in 3.24 seconds (process running for 3.736)
+2024-12-28T21:40:40.816+05:30  INFO 12504 --- [datajpausingsorting_paginatio_QuerybyExample] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-28T21:40:40.820+05:30  INFO 12504 --- [datajpausingsorting_paginatio_QuerybyExample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-28T21:40:40.828+05:30  INFO 12504 --- [datajpausingsorting_paginatio_QuerybyExample] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

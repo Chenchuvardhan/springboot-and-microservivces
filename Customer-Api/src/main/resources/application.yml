@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: Customer-Api
+  datasource:
+    url: jdbc:mysql:///e-commerceproject
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update

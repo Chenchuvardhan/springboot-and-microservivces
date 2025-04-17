@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form Example</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			padding: 20px;
+		}
+
+		.form-container {
+			max-width: 400px;
+			margin: 0 auto;
+			border: 1px solid #ccc;
+			padding: 20px;
+			border-radius: 8px;
+		}
+
+		.form-container label {
+			display: block;
+			margin-bottom: 5px;
+		}
+
+		.form-container input,
+		.form-container select {
+			width: 100%;
+			padding: 8px;
+			margin-bottom: 15px;
+			border-radius: 4px;
+			border: 1px solid #ccc;
+		}
+
+		.form-container button {
+			padding: 10px 20px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		.form-container button:hover {
+			background-color: #45a049;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="form-container">
+		<a th:href="@{/viewenquiries}">View Enquiries</a>
+		<h2>Registration Form</h2>
+		<form th:action="@{/saveenquiry}" method="POST" th:object="${enquirydto}">
+			<input type="hidden" name="eid"  th:field="*{eid}">
+			
+			<!-- Name field -->
+			<label for="name">Name:</label>
+			<input type="text" id="name" th:field="*{name}" required>
+			<!-- Phone number field -->
+			<label for="phno">Phone Number:</label>
+			<input type="tel" id="phno" th:field="*{phno}" required>
+
+			<!-- Class Mode dropdown -->
+			<label for="classmode">Class-Mode</label>
+			<select id="classmode" name="classmode" th:field="*{classmode}" required>
+			    <option value="online" th:selected="${classmode == 'online'}">Online</option>
+			    <option value="offline" th:selected="${classmode == 'offline'}">Offline</option>
+			</select>
+
+			<!-- Course dropdown -->
+			<label for="course">Course</label>
+			<select id="course" name="course" th:field="*{course}" required>
+				<option value="UI" th:selected="${course=='UI'}">UI/UX</option>
+				<option value="java fullstack" th:selected="${course=='java fullstack'}">Java FullStack</option>
+				<option value="python fullstack" th:selected="${course=='python fullstack'}">Python FullStack</option>
+
+			</select>
+
+			<!-- Status dropdown -->
+			<label for="status">Status</label>
+			<select id="status" name="status" th:field="*{status}" required>
+				<option value="open" th:selected="${status=='open'}">open</option>
+				<option value="close" th:selected="${status=='open'}">close</option>
+				<option value="lost"th:selected="${status=='lost'}" >lost</option>
+			</select>
+
+			<!-- Submit button -->
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+</body>
+
+</html>

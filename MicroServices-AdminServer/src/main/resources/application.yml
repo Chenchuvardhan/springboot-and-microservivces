@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: MicroServices-ServiceRegistry-1
+server:
+  port: 1111

@@ -1,0 +1,35 @@
+2024-12-03T16:23:18.272+05:30  INFO 19148 --- [springprofiles] [main] i.s.SpringprofilesApplication            : Starting SpringprofilesApplication using Java 17.0.11 with PID 19148 (C:\sbms\sbms again\springprofiles\target\classes started by DELL in C:\sbms\sbms again\springprofiles)
+2024-12-03T16:23:18.274+05:30  INFO 19148 --- [springprofiles] [main] i.s.SpringprofilesApplication            : The following 1 profile is active: "uat"
+2024-12-03T16:23:18.829+05:30  INFO 19148 --- [springprofiles] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-03T16:23:18.882+05:30  INFO 19148 --- [springprofiles] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interface.
+2024-12-03T16:23:19.358+05:30  INFO 19148 --- [springprofiles] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 1000 (http)
+2024-12-03T16:23:19.370+05:30  INFO 19148 --- [springprofiles] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-03T16:23:19.371+05:30  INFO 19148 --- [springprofiles] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-03T16:23:19.419+05:30  INFO 19148 --- [springprofiles] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-03T16:23:19.419+05:30  INFO 19148 --- [springprofiles] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1108 ms
+2024-12-03T16:23:19.556+05:30  INFO 19148 --- [springprofiles] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-03T16:23:19.608+05:30  INFO 19148 --- [springprofiles] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-03T16:23:19.640+05:30  INFO 19148 --- [springprofiles] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-03T16:23:19.972+05:30  INFO 19148 --- [springprofiles] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-03T16:23:20.002+05:30  INFO 19148 --- [springprofiles] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-03T16:23:20.301+05:30  INFO 19148 --- [springprofiles] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@43d3995f
+2024-12-03T16:23:20.303+05:30  INFO 19148 --- [springprofiles] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-03T16:23:20.382+05:30  INFO 19148 --- [springprofiles] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-03T16:23:21.172+05:30  INFO 19148 --- [springprofiles] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-03T16:23:21.303+05:30  INFO 19148 --- [springprofiles] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-03T16:23:21.535+05:30  WARN 19148 --- [springprofiles] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-03T16:23:21.891+05:30  INFO 19148 --- [springprofiles] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 1000 (http) with context path '/'
+2024-12-03T16:23:21.902+05:30  INFO 19148 --- [springprofiles] [main] i.s.SpringprofilesApplication            : Started SpringprofilesApplication in 4.04 seconds (process running for 4.53)
+2024-12-03T16:32:16.429+05:30  INFO 19148 --- [springprofiles] [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-12-03T16:32:16.439+05:30  INFO 19148 --- [springprofiles] [RMI TCP Connection(13)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-03T16:32:16.622+05:30  INFO 19148 --- [springprofiles] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-03T16:32:16.625+05:30  INFO 19148 --- [springprofiles] [RMI TCP Connection(13)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-03T16:32:16.627+05:30  INFO 19148 --- [springprofiles] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-03T16:32:16.633+05:30  INFO 19148 --- [springprofiles] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

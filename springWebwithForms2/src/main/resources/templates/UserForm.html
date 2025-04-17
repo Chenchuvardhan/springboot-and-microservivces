@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>User Form</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="container">
+		<h1 style="color: blue">User Registration</h1>
+		<h4 style="color: green;" th:text="${msg}"></h4>
+		<table class="table-primary">
+			<form th:action="@{/register/submit}" method="post" th:object="${user}">
+				<tr>
+					<td>
+						<h4>Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" th:field="*{name}"></h4>
+					</td>
+					<td>
+						<p th:if="${#fields.hasErrors('name')}" style="color: red;" th:errors="*{name}" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<h4>email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email"
+								th:field="*{email}"></h4>
+					</td>
+					<td>
+						<p th:if="${#fields.hasErrors('email')}" style="color: red;" th:errors="*{email}" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<h4>address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" th:field="*{address}"></h4>
+					</td>
+					<td>
+						<p th:if="${#fields.hasErrors('address')}" style="color: red;" th:errors="*{address}" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<h4>Mobile-No<input type="tel" th:field="*{mobileNumber}"></h4>
+					</td>
+					<td>
+						<p th:if="${#fields.hasErrors('mobileNumber')}" style="color: red;" th:errors="*{mobileNumber}" />
+					</td>
+					<td><input type="hidden" th:field="*{id}">Id</td>
+				</tr>
+				<tr>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+							th:type="submit" value="Save" class="btn btn-primary">&nbsp;&nbsp;<input type="reset"
+							value="Cancel" class="btn btn-danger"></td>
+			</form>
+		</table>
+		<a th:href="@{/register/allusers}" class="btn btn-info"> View Users</a>
+	</div>
+</body>
+
+</html>

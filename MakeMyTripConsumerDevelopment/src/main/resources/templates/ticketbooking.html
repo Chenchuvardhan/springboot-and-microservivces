@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Train Ticket Form</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f4f4f9;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+
+		.form-container {
+			background-color: #ffffff;
+			padding: 30px;
+			border-radius: 10px;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			width: 100%;
+			max-width: 500px;
+		}
+
+		h2 {
+			text-align: center;
+			color: #333;
+		}
+
+		label {
+			font-size: 14px;
+			font-weight: bold;
+			color: #555;
+			margin-top: 10px;
+			display: block;
+		}
+
+		input,
+		select,
+		button {
+			width: 100%;
+			padding: 10px;
+			margin-top: 8px;
+			border-radius: 5px;
+			border: 1px solid #ddd;
+			font-size: 14px;
+			box-sizing: border-box;
+		}
+
+		input[type="date"],
+		input[type="email"],
+		input[type="number"],
+		select {
+			margin-bottom: 15px;
+		}
+
+		button {
+			background-color: #4CAF50;
+			color: white;
+			font-size: 16px;
+			cursor: pointer;
+			border: none;
+			margin-top: 20px;
+		}
+
+		button:hover {
+			background-color: #45a049;
+		}
+
+		.form-footer {
+			text-align: center;
+			margin-top: 20px;
+		}
+
+		.form-footer a {
+			text-decoration: none;
+			color: #4CAF50;
+		}
+	</style>
+</head>
+
+<body>
+			<div class="form-container">
+				<h2>Train Ticket Booking</h2>
+				<form th:action="@{/bookticket}" method="post" th:object="${ticket}">
+					<label for="name">Full Name</label>
+					<input type="text" id="name" th:field="*{name}" placeholder="Enter your full name" required>
+
+					<label for="email">Email</label>
+					<input type="email" id="email" th:field="*{email}" placeholder="Enter your email" required>
+
+					<label for="gender">Gender</label>
+					<select id="gender" th:field="*{gender}" required>
+						<option value="">Select Gender</option>
+						<option value="male" th:selected="${gender=='male'}">Male</option>
+						<option value="female" th:selected="${gender=='female'}">Female</option>
+						<option value="other" th:selected="${gender=='other'}">Other</option>
+					</select>
+
+					<label for="trainNum">Train Number</label>
+					<input type="text" id="trainNum" th:field="*{trainNum}" placeholder="Enter train number" required>
+
+					<label for="dob">Date of Birth</label>
+					<input type="text" id="dob" th:field="*{dob}" required>
+
+					<label for="travelDate">Travel Date</label>
+					<input type="text" id="travelDate" th:field="*{doj}" required>
+
+					<label for="source">Source</label>
+					<input type="text" id="source" th:field="*{source}" placeholder="Enter source location" required>
+
+					<label for="destination">Destination</label>
+					<input type="text" id="destination" th:field="*{destination}" placeholder="Enter destination"
+						required>
+
+					<label for="ticketStatus">Ticket Status</label>
+					<select id="ticketStatus" th:field="*{ticketStatus}" required>
+						<option value="">Select Ticket Status</option>
+						<option value="booked" th:selected="${ticketStatus=='booked'}">Booked</option>
+						<option value="cancelled" th:selected="${ticketStatus=='cancelled'}">Cancelled</option>
+						<option value="pending" th:selected="${ticketStatus=='pending'}">Pending</option>
+					</select>
+					<button type="submit">Submit</button>
+				</form>
+				<p style="color: green" th:text="${status}"></p>
+				<div class="form-footer">
+					<p>Already have an account? <a href="#">Login</a></p>
+				</div>
+			</div>
+
+</body>
+
+</html>
